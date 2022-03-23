@@ -37,18 +37,24 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --body-margin: 24px;
+  --font-size: 1rem;
+  --bg-color: #0e0e0e;
+}
+
 body {
   padding: 0;
   margin: 0;
   background: #fdfdfd;
   font-family: hellix, input-mono, monospace;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: var(--font-size);
   line-height: 1.2em;
-  color: #0e0e0e;
+  color: var(--bg-color);
 }
 .page-wrapper {
-  padding: 24px;
+  padding: var(--body-margin);
   display: flex;
   flex-direction: column;
 }
@@ -60,8 +66,8 @@ body {
 .page-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 24px;
-  row-gap: 24px;
+  column-gap: var(--body-margin);
+  row-gap: var(--body-margin);
 }
 .menu-wrapper {
   grid-column: 1 / span 2;
@@ -69,7 +75,7 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-  padding-top: 24px;
+  padding-top: var(--body-margin);
   justify-content: space-between;
 }
 .menu-wrapper li {
@@ -83,4 +89,24 @@ body {
 .page-content p {
   grid-column: auto / span 1;
   margin: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --body-margin: 12px;
+    --font-size: 1rem;
+  }
+  .logo {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .page-content p:not(:first-child) {
+    text-indent: 1em;
+  }
+  .page-content p {
+    grid-column: auto / span 2;
+    margin: 0;
+  }
 }
