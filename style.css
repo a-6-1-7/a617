@@ -95,7 +95,7 @@ body {
 @media only screen and (max-width: 600px) {
   :root {
     --body-margin: 12px;
-    --font-size: 1rem;
+    --font-size: 1rem
   }
   .logo {
     width: 100%;
