@@ -40,7 +40,17 @@
 :root {
   --body-margin: 24px;
   --font-size: 1rem;
-  --bg-color: #0e0e0e;
+  --bg-color: #ebebeb;
+  --text-color: #0e0e0e;
+}
+::-moz-selection {
+  color: var(--bg-color);
+  background: var(--text-color);
+}
+
+::selection {
+  color: var(--bg-color);
+  background: var(--text-color);
 }
 
 body {
@@ -51,7 +61,8 @@ body {
   font-weight: 400;
   font-size: var(--font-size);
   line-height: 1.2em;
-  color: var(--bg-color);
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 .page-wrapper {
   padding: var(--body-margin);
