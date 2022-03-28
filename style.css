@@ -144,6 +144,9 @@ body {
     grid-column: auto / span 2;
     margin: 0;
   }
+  .menu-wrapper {
+    width: 100%;
+  }
   .footer .links-wrapper {
     grid-column: 1 / span 2;
     display: flex;
