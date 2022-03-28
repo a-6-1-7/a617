@@ -40,7 +40,7 @@
 }
 :root {
   --body-margin: 32px;
-  --font-size: 1rem;
+  --font-size: 1.12rem;
   --bg-color: #fbfbfb;
   --text-color: #0e0e0e;
 }
@@ -97,6 +97,7 @@ body {
 .menu-wrapper li {
   text-transform: uppercase;
   font-style: italic;
+  font-style: normal;
 }
 .menu-wrapper li a {
   text-decoration: none;
@@ -112,7 +113,7 @@ body {
   column-gap: var(--body-margin);
   row-gap: var(--body-margin);
   position: absolute;
-  width: 100%;
+  width: calc(100% - 2 * (var(--body-margin)));
   bottom: var(--body-margin);
 }
 .footer .links-wrapper {
