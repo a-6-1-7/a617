@@ -107,6 +107,10 @@ body {
   grid-column: auto / span 1;
   margin: 0;
 }
+.page-content p a {
+  color: inherit;
+  cursor: pointer;
+}
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
