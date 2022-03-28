@@ -157,7 +157,7 @@ body {
     padding-bottom: calc( 2 * var(--body-margin));
   }
   .menu-wrapper li {
-    font-size: calc(0.9 * var(--font-size));
+    font-size: calc(0.8 * var(--font-size));
   }
   .footer {
     padding-top: calc( 4 * var(--body-margin));
