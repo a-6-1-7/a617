@@ -134,7 +134,7 @@ body {
 @media screen and (max-width: 720px) {
   :root {
     --body-margin: 12px;
-    --font-size: 1rem;
+    --font-size: 1.15rem;
   }
   body {
     line-height: 1.4em;
