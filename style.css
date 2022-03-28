@@ -143,9 +143,13 @@ body {
   .page-content p {
     grid-column: auto / span 2;
     margin: 0;
+    font-size: calc(1.1 * var(--font-size));
   }
   .menu-wrapper {
     width: 100%;
+  }
+  .menu-wrapper li {
+    font-size: calc(0.9 * var(--font-size));
   }
   .footer .links-wrapper {
     grid-column: 1 / span 2;
