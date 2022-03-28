@@ -39,7 +39,7 @@
   box-sizing: border-box;
 }
 :root {
-  --body-margin: 32px;
+  --body-margin: 24px;
   --font-size: 1.12rem;
   --bg-color: #fbfbfb;
   --text-color: #0e0e0e;
@@ -67,7 +67,7 @@ body {
   overflow-x: hidden;
 }
 .page-wrapper {
-  padding: calc(1.2 * var(--body-margin)) var(--body-margin);
+  padding: calc(2 * var(--body-margin)) var(--body-margin);
   display: flex;
   flex-direction: column;
   position: relative;
@@ -118,7 +118,7 @@ body {
   row-gap: var(--body-margin);
   position: absolute;
   width: calc(100% - 2 * (var(--body-margin)));
-  bottom: calc(1.2 * var(--body-margin));
+  bottom: calc(1 * var(--body-margin));
 }
 .footer .links-wrapper {
   grid-column: 2 / span 1;
