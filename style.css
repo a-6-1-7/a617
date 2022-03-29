@@ -129,6 +129,9 @@ body {
   color: inherit;
   text-decoration: none;
 }
+.underline-tight {
+  letter-spacing: -0.04em;
+}
 
 
 @media screen and (max-width: 720px) {
